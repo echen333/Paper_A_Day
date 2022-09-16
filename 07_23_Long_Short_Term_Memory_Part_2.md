@@ -1,5 +1,5 @@
 ---
-title: Long Short Term Memory
+title: Long Short Term Memory Part 2
 link: https://twitter.com/chen_eddi/status/1551885164862615552, http://www.bioinf.jku.at/publications/older/2604.pdf
 author: Edward Chen
 date: 7/23/22
