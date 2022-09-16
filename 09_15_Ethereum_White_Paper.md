@@ -1,12 +1,12 @@
 ---
-title: [Ethereum White Paper](https://www.researchhub.com/paper/819634)
+title: Ethereum White Paper
 link: https://www.researchhub.com/paper/819634
 author: Edward Chen
 date: 9/15/22
 tags: Crypto
 ---
 
-# Day 7 of Summarizing a Paper a Day: Ethereum White Paper (9/15/22)
+# Day 7 of Summarizing a Paper a Day: Ethereum White Paper
 
 **I do want to note that some stuff here is most likely wrong as I'm not a crypto expert in the slightest. Please email me at echen99[at]gmail.com if something is incorrect.**
 
@@ -16,7 +16,7 @@ Launched in 2015 by Vitalik Buterin, Ethereum is now one of the biggest cryptos 
 
 Now, what do each of these individual nodes actually look like, and how do we organize them? Vitalik proposes a Merkle tree, a binary tree (at most 2 children) that uses a large amount of leaf nodes to propagate hashes and information upward with intermediate nodes. Hashes are computed for intermediate nodes using the hash of their children, making it such that the network is decentralized while also rendering malicious nodes unable to propagate if they do not have the correct hash.
 
-![hi](img/09_16_Merkle.png)
+![hi](img/09_15_Merkle.png)
 
 With this background, let’s look at Ethereum. Ethereum exists on the ethereum blockchain instead of the Bitcoin chain and one of its separating factors is its ability to initiate contracts, like autonomous agents that carry out the code set forth in the contract when activated by a trigger set in the contract. Each Ethereum account carries a contract code, if present, as well as a nonce, ether balance, and storage.
 
