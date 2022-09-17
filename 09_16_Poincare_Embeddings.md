@@ -1,3 +1,10 @@
+---
+title: Poincare Embeddings
+link: https://arxiv.org/pdf/1705.08039.pdf
+author: Edward Chen
+date: 9/16/22
+tags: Math, Differential Geometry
+---
 
 - [Introduction](#introduction)
 - [Embeddings and Hyperbolic Geo](#embeddings-and-hyperbolic-geo)
