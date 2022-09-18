@@ -6,4 +6,7 @@ I want to thank [Sigil Wen](https://twitter.com/0xsigil?lang=en) for giving me t
 
 Note: Some math does not load in Github's markdown preview. Will try to fix this. Please let me know if there is an easy solution.
 
+Some of my favorite paper summaries:
+ - [Poincare_Embeddings](https://github.com/echen333/Paper-A-Day/commit/0462f8ae14ba5ad7554a9f5613cad8db757e7005)
+
 Contact me at echen333[at]gmail.com.
