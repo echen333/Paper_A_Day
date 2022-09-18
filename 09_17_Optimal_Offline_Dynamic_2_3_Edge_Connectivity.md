@@ -1,6 +1,5 @@
 ---
-title: Optimal Offline Dynamic 2, 3-Edge/Vertex
-Connectivity
+title: Optimal Offline Dynamic 2, 3-Edge/Vertex Connectivity
 link: https://arxiv.org/pdf/1708.03812
 author: Edward Chen
 date: 9/17/22
