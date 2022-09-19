@@ -41,7 +41,7 @@ One of the first things I found you should think about when handling offline que
 
 The crux here is using divide and conquer to handle permanent edges since we know the size of non-permanent edges is bounded. We attempt to transform our graph of permanent edges into a set of smaller graph sizes, measured by edge count. If we can recursively divide and conquer, we logarithmically decrease run time. 
 
-First, we transform our $c-$edge connectivity problem to one of min cuts, which is prefaced in background. Two vertices $u$ and $v$ are c-edge connected if min cut $\ge c-1$. Two vertices $u$ and $v$ are c-vertex connected if there doesn't exist a cut of $c-1$ vertices that separate them.
+First, we transform our $c-$ edge connectivity problem to one of min cuts, which is prefaced in background. Two vertices $u$ and $v$ are c-edge connected if min cut $\ge c-1$. Two vertices $u$ and $v$ are c-vertex connected if there doesn't exist a cut of $c-1$ vertices that separate them.
 
 Thus, we prove: given a graph $G$ with m edges and vertex set $W$ of size $k$, if there is an $O(m)$ time algo that produces a graph $H$ of size $O(k)$ that is c-edge and c-vertex equivalent to $G$ on $W$, then we can answer all queries in the events $x_1,...x_t$ in $O(t\log{n})$. 
 
