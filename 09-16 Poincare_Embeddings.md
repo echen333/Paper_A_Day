@@ -6,13 +6,13 @@ date: 9/16/22
 tags: Math, Differential Geometry
 ---
 
-- [Introduction](#introduction)
+- [Day 8 of Summarizing a Paper a Day: Ethereum White Paper](#day-8-of-summarizing-a-paper-a-day-ethereum-white-paper)
 - [Embeddings and Hyperbolic Geo](#embeddings-and-hyperbolic-geo)
 - [Poincaré Embeddings](#poincaré-embeddings)
 
 Note: Special thanks to [Owen Oertell](https://owenoertell.net/) for the paper recommendation!
 
-## Introduction
+## Day 8 of Summarizing a Paper a Day: Ethereum White Paper
 
 Some of the most exciting Machine Learning models today are in processing high level symbolic data such as images and large amounts of text. This paper introduces using Poincare Embeddings to more efficiently represent this data and how to encode high level data in machine learning models. Termed embeddings, they are used to translate image, text, and graph data to ML-applicable data that don't lose their inherit properties. For example, images lose out on the locality property, where heavier emphasis is placed on pixels closer to each other, when translated into pixels into a 1d array.
 
@@ -22,7 +22,7 @@ One of the problems with modern embedding applications though is their inability
 
 Hyperbolic space (distance $\ne$ Euclidean distance) is helpful because it allows the modelling of exponential growth rates in space and is perfect for modelling something like where the # of nodes at level $l$ of a tree is $k^l$. This is due to the negative curvature in space, where distance grows exponentially as you approach the border of the circle. Think of it as looking down on a sphere - the many points on the circumference look infinitely close to each other, but make it a very morphed sphere. This fits perfectly in power-law distributions, already seen helpful in things like natural language and greedy routing in geography ([Kleinberg](https://en.wikipedia.org/wiki/Small-world_routing)).
 
-![hi](./img/Poincare_Embeddings_1.png)
+![](img/09_16_Poincare_Embeddings_1.png)
 
 ## Poincaré Embeddings
 
@@ -37,6 +37,6 @@ where $\epsilon=10^{-5}$. This is to remove points too quickly converging or hav
 
 For training details, see section $3.2$ and $4$, but it is interesting to see that Poincaré embeddings can already greatly reduce dimensionality in large-scale data. We see that compared to traditional Euclidean embeddings, Poincaré embeddings can logarithimically decrease dimension size.  
 
-![hi](./img/Poincare_Embeddings_2.png)
+![](img/09_16_Poincare_Embeddings_2.png)
 
-![hi](./img/Poincare_Embeddings_3.png)
+![](img/09_16_Poincare_Embeddings_3.png)

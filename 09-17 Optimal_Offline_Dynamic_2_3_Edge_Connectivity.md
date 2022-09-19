@@ -1,13 +1,21 @@
 ---
-title: Optimal Offline Dynamic 2, 3-Edge/Vertex
-Connectivity
+title: Optimal Offline Dynamic 2, 3-Edge/Vertex Connectivity
 link: https://arxiv.org/pdf/1708.03812
 author: Edward Chen
 date: 9/17/22
 tags: CS, algorithms, data structures, technical
 ---
 
-## Introduction
+- [Day 9 of Summarizing a Paper a Day: Optimal Offline Dynamic 2/3 Edge/Vertex Connectivty](#day-9-of-summarizing-a-paper-a-day-optimal-offline-dynamic-23-edgevertex-connectivty)
+  - [Background](#background)
+  - [Past Papers](#past-papers)
+  - [Offline Framework](#offline-framework)
+  - [Constructing equivalent graphs](#constructing-equivalent-graphs)
+  - [Extending to 3-Edge Connecitvity](#extending-to-3-edge-connecitvity)
+  - [SPQR Trees](#spqr-trees)
+    - [Trimming the SPQR tree](#trimming-the-spqr-tree)
+
+## Day 9 of Summarizing a Paper a Day: Optimal Offline Dynamic 2/3 Edge/Vertex Connectivty
 
 In this paper, Richard Peng introduces an offline graph data structure that handles connectivity queries and edge updates in undirected graphs. Specifically, the data structure handles edge updates of the form insert edge $(u,v)$, delete edge $(u,v)$, and query 2-edge and 3-edge and 2-vertex and 3-vertex connectivity queries, each in only $O(\log n)$ time.
 
@@ -15,7 +23,7 @@ In this paper, Richard Peng introduces an offline graph data structure that hand
 
 - Let me give some background here. We call queries offline when we know all the queries and can look at all update $i$ before handling update $j$ where $i>j$. This is useful, for example, when looking to diagnose past issues in your network or looking at historical data from roads. It follows that to handle offline queries should be faster than to handle online ones because you could turn any offline problem into an online one. 
 
-- A connectivity query asks the graph for whether points $(u,v)$ are connected by a series of edges. We let $c$-edge connectivity refer to whether the graph contains $c$ edge-disjoint paths between $u$ and $v$.
+- A connectivity query asks the graph for whether points $(u,v)$ are connected by a series of edges. We let $c$ -edge connectivity refer to whether the graph contains $c$ edge-disjoint paths between $u$ and $v$.
 
 - Used later, a cut in a graph is a partition of the vertices in the graph into two disjoint subsets that minimizes total edges between the two sets.  A famous result from min cuts is the [Max-flow min-cut theorem](https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem), which states that max flow is actually equal to min-cut.
 
