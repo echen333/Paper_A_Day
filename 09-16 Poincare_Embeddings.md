@@ -3,7 +3,7 @@ title: Poincare Embeddings
 link: https://arxiv.org/pdf/1705.08039.pdf
 author: Edward Chen
 date: 9/16/22
-tags: Math, Differential Geometry
+tags: Math
 ---
 
 - [Day 8 of Summarizing a Paper a Day: Ethereum White Paper](#day-8-of-summarizing-a-paper-a-day-ethereum-white-paper)

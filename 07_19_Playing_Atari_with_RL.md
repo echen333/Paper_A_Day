@@ -3,7 +3,7 @@ title: Playing Atari with Deep Reinforcement Learning
 link: https://twitter.com/chen_eddi/status/1549803206921728001, https://arxiv.org/pdf/1312.5602.pdf
 author: Edward Chen
 date: 7/19/22
-tags: AI, RL
+tags: AI
 ---
 
 # Day 2 of Summarizing AI papers: Playing Atari with Deep Reinforcement Learning (7/19/22)

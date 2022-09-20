@@ -1,11 +1,14 @@
 ---
-title: Optimal Offline Dynamic 2, 3-Edge/Vertex Connectivity
+title: Existential Risk Part 1
 link: https://existential-risk.org/concept
 author: Edward Chen
-date: 9/17/22
-tags: CS, algorithms, data structures, technical
+date: 9/18/22
+tags: Rationality
 ---
-
+- [Day 10 of Summarizing a Paper a Day: Existential Risk Part 1](#day-10-of-summarizing-a-paper-a-day-existential-risk-part-1)
+  - [The maxipok rule](#the-maxipok-rule)
+  - [Classification of Existential Risk](#classification-of-existential-risk)
+  
 ## Day 10 of Summarizing a Paper a Day: Existential Risk Part 1
 
 ### The maxipok rule
@@ -38,7 +41,7 @@ Let's assume 1 billion more years of society, 1 billion people, 100 year lifespa
 
 The final conclusion here though, which I beleive, is that "even using the most conservative of these estimates, ... this implies that the expected value of reducing existential risk by just one millionth of 1% is equal to 100 million human lives."  Even a small, marginal output on the probability of existential risk would be compounded throughout the hopefully many years later of human civilization. It is possibly even more important than the direct benefit of saving 1 billion lives today.
 
-The interpretation that follows is to maxinimize "OK" outcomes that avoids catastrophe at all costs. Or choose the action that has the best worst-case outcomes. 
+The interpretation that follows is to maximize "OK" outcomes that avoids catastrophe at all costs. Or choose the action that has the best worst-case outcomes. 
 
 ### Classification of Existential Risk
 
