@@ -12,6 +12,8 @@ Zero Knowledge (ZK) is the new shiny thing. It has blown up recently, so let's d
 
 ZK-SNARKs, short for succinct non-interactive arguments of knowledge are a level above ZK. ZK refers to proving that you hold a piece of information without actually conveying that information outright, verified using a "witness." With ZK-SNARKs, there is the added requirement for them to be non-interactive, ruling out probabilitistic proofs, and succinct, using only limited forms of homomorphic encodings. 
 
+![](img/09_21__zk1.jpeg)
+
 #### P and NP
 
 P refers to polynomial runtime programs $(O^k),$ where $k$ is small and finite, whereas we formally denote NP to be exponential runtime computation problems. Read more about [computation classes](https://en.wikipedia.org/wiki/Complexity_class) here. Formally, we say a problem is NP here if $L(x)=1$ iff a witness $w$ makes $V(x,w)=1$. 
@@ -26,10 +28,10 @@ We note that SAT is actually NP-complete. This means that any problem in NP can 
 
 We use PolyZero as our reduction function, trying to find $x$ for which $L(x) = 0$. This is equivalent to SAT (where we go for $L(x)=1$) under the reduction;
 
- - $r(x_1) \vcentcolon = 1-x_1$
- - $r(\neg f) \vcentcolon = 1-r(f)$
- - $r((f\land g)) \vcentcolon = 1-(1-r(f))(1-r(g))$
- - $r((f\lor g)) \vcentcolon = r(f)r(g)$
+ - $r(x_1) = 1-x_1$
+ - $r(\neg f) = 1-r(f)$
+ - $r((f\land g)) = 1-(1-r(f))(1-r(g))$
+ - $r((f\lor g)) = r(f)r(g)$
 
 Plugging in to each equivalence proves that $r(f) =0$ iff $L(f)=1$.  By reframing our SAT problem, we make it easier to use polynomials, similar to finding roots. We do this efficiently with QSP's.
 
@@ -37,7 +39,7 @@ Plugging in to each equivalence proves that $r(f) =0$ iff $L(f)=1$.  By reframin
 
 In the use case here, a QSP is finding a linear combination of a set of polynomials that is a multiple of another given polynomial. Additionally, a given binanry input string $u$ (from the SAT problem) restricts the polynomial dimensions you can use. 
 
-For the ZK problem, the input $u$ is *accepted* by the QSP iff there are tuples $a = *a_1, ..., a_m$ and $b = (b_1, ... b_m)$ from the field $F$ s.t.:
+For the ZK problem, the input $u$ is *accepted* by the QSP iff there are tuples $a = a_1, ..., a_m$ and $b = (b_1, ... b_m)$ from the field $F$ s.t.:
 
  - $a_k, b_k = 1$ if $k=f(i,u[i])$ where $u[i]$ is the ith bit.
  - $a_k, b_k = 0$ if $k=f(i,1-u[i])$ 
