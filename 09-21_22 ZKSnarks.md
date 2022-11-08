@@ -22,7 +22,7 @@ P refers to polynomial runtime programs $(O^k),$ where $k$ is small and finite, 
 
 An example of an NP problem is boolean satisfiability (SAT). The problem is finding boolean variables $x_1, x_2, ..., x_n$ that satisfy a boolean formula, e.g. $((x_1\land x_2) \land \neg x_2).$ Formulas include the operands $\lor, \land, \neg$ for or, and, and negation.
 
-We note that SAT is actually NP-complete. This means that any problem in NP can be turned into a SAT problem. For any NP-problem $L$, there is a reduction function s.t.: $$L(x) = SAT(f(x))$$.
+We note that SAT is actually NP-complete. This means that any problem in NP can be turned into a SAT problem. For any NP-problem $L$, there is a reduction function s.t.: $$L(x) = SAT(f(x)).$$
 
 #### Reduction Function
 
